@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플루토</title>
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../css/sub.css">
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <h1><a href="../index.html"><img src="../img/logo.svg" alt="플루토">
+        </a></h1>
+      <ul class="util">
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="terms_of_service.html">회원가입</a></li>
+      </ul>
+    </header>
+    <main id="main">
+      <div class="join">
+        <form>
+          <fieldset>
+            <h2>회원가입</h2>
+            <h3>약관동의</h3>
+            <div class="check">
+              <table>
+                <thead>
+                  <tr>
+                    <td><input type="checkbox" id="cbx_chkAll" /></td>
+                    <td colspan="2">모두 동의</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" name="chk" required></td>
+                    <td>[필수] 이용약관 </td>
+                    <td><a href="#">보기</a></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="chk" required></td>
+                    <td>[필수] 개인정보 수집 및 이용에 대한 동의 </td>
+                    <td><a href="#">보기</a></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="chk" required></td>
+                    <td>[필수] 만 14세 이상입니다. </td>
+                    <td><a href="#">보기</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a href="join.html" class="btn">다음</a>
+          </fieldset>
+        </form>
+      </div>
+
+    </main>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/sub.js"></script>
+
+</body>
+
+</html>

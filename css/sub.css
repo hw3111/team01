@@ -1,0 +1,359 @@
+
+#wrap{
+  position:relative;
+  min-width:330px;
+}
+.inner{
+  max-width:1920px;
+  margin:0 auto;
+  position:relative;
+}
+
+/* HEADER */
+#header {
+  display:flex;
+  justify-content: space-between;
+  top:0;
+  left:0;
+  z-index:2;
+  width:100%;
+  height:100px;
+  padding:30px 24px;
+}
+#header h1 img{
+  width:100.65px;
+}
+#header .util{
+  display:flex;
+  gap:30px;
+  font-size:18px;
+}
+#header .util li:nth-child(1){
+  padding:6px 13px;
+}
+#header .util li:nth-child(2){
+  padding:6px 13px;
+  background: #157FD1;
+  border-radius:25px;
+}
+@media(max-width:1090px){
+}
+/* main_global */
+h2{
+  font-size:5rem;
+  text-align:center;
+}
+@media (max-width:1024px){
+  h2{
+    font-size:3.2rem;
+  }
+  
+}
+
+@media(max-width:640px){
+
+  #header .util{
+    display:none;
+  }
+}
+@media (max-width:600px){
+  h2{
+    font-size:1.8rem;
+  }
+}
+#main{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+#main > div{
+  max-width:609px;
+  padding:80px 60px;
+  background: #22233B;
+  border-radius:30px;
+  flex-grow:1;
+}
+ h2{
+  text-align:left;
+  font-size:4rem;
+  margin-bottom:20px;
+}
+@media(max-width:640px){
+  #main > div{
+    padding:50px 30px;
+    margin:0 16px;
+  }
+}
+@media(max-width:500px){
+  h2{
+    font-size:3.2rem;
+  }
+  table td{
+    font-size:1.2rem;
+  }
+  table td a{
+    word-break:keep-all;
+  }
+}
+
+input[type="email"] , input[type="password"],input[type="text"], input[type="call"]{
+  width:100%;
+  height:50px;
+  padding-left:20px;
+  background: rgba(255,255,255,0.2);
+  border:0;
+  border-radius:5px;
+  font-size:1.6rem;
+  color:rgba(255,255,255,0.6);
+  margin-top:20px;
+}
+.login input:nth-of-type(1){
+  margin:0;
+}
+input::placeholder{
+  color:rgba(255,255,255,0.6);
+  font-weight:500;
+}
+.login .checkbox{
+  margin-top:20px;
+}
+input[type="checkbox"]{
+  width:15px;
+  height:16px;
+  margin-top:5px;
+  padding-left:20px;
+  background: url(../img/checkbox.png) no-repeat left center;
+  appearance: none;
+}
+input[type="checkbox"]:checked{
+  background: url(../img/checkbox_check.png) no-repeat left center;
+  appearance: none;
+}
+.login input[type="checkbox"]:nth-of-type(2){
+  margin-left:20px;
+}
+.login label{
+  font-size:1.6rem;
+  color:rgba(255,255,255,0.8);
+}
+.login .checkbox span{
+  float:right;
+  color:rgba(255,255,255,0.5);
+  margin-top:5px;
+}
+ button,.btn {
+  display:block;
+  background: #157FD1;
+  color:white;
+  border:0;
+  width:100%;
+  height:50px;
+  border-radius:5px;
+  font-size:1.6rem;
+  margin-top:40px;
+}
+.btn{
+  text-align:center;
+  line-height:50px;
+}
+.login_join{
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+.login_join p{
+  color:rgba(255,255,255,0.8);
+}
+.login_join a{
+  text-decoration:underline;
+}
+
+@media(max-width:500px){
+  .login .checkbox{
+    margin-top:5px;
+  }
+  .login .checkbox span{
+    display:block;
+    float:none;
+    margin-top:10px;
+    font-size:1.2rem;
+  }
+  .login label{
+    font-size:1.2rem;
+  }
+  input::placeholder{
+    font-size:1.4rem;
+  }
+  input[type="checkbox"]{
+    background: url(../img/checkbox.png) no-repeat left bottom / 12px;
+  }
+  input[type="checkbox"]:checked{
+    background: url(../img/checkbox_check.png) no-repeat left bottom / 12px;
+  }
+  .login_join p{
+    font-size:1.4rem;
+  }
+  .login_join a{
+    font-size:1.4rem;
+  }
+}
+/* join */
+.join h3{
+  font-weight:500;
+  color:rgba(255,255,255,0.9);
+  margin-bottom:10px;
+}
+.join .check{
+  background: #101124;
+  padding:30px;
+  border-radius:10px;
+  color:rgba(255,255,255,0.8);
+}
+.check table{
+  font-size:1.6rem;
+}
+.check table tbody tr td{
+  padding:5px 0;
+}
+.check table thead tr:nth-child(1) td {
+  border-bottom: 1px solid #fff;
+}
+.check table thead tr:nth-child(1) td{
+padding:10px 0;
+}
+.check table tbody tr:nth-child(1) td{
+  padding:20px 0 0;
+}
+
+.check table tr td:nth-of-type(3){
+  color:#717171;
+  text-decoration:underline;
+  text-align:right;
+}
+.join_detail .name {
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+/* join-detail */
+#main .join_detail{
+  background: #020318;
+}
+#main .join_detail h2{
+  margin-bottom:40px;
+}
+#main .join_detail h3{
+  font-weight:500;
+  font-size:2rem;
+}
+
+#main .phone span{
+  font-weight:400;
+  color:rgba(255,255,255,0.8);
+}
+.e-mail{
+  position:relative;
+}
+#main .join_detail .check_email,.check_phone{
+  position:absolute;
+  right:0;
+  top:45px;
+  color:#157FD1;
+  font-size:1.4rem;
+  cursor:pointer;
+  background: #1B1C2F;
+  padding: 10px 16px;  
+}
+.phone{
+  position:relative;
+}
+.phone .check_inzung{
+  position:absolute;
+  right:0;
+  top:105px;
+  color:#157FD1;
+  font-size:1.4rem;
+  cursor:pointer;
+  background: #1B1C2F;
+  padding: 10px 16px;  
+}
+.password span{
+  color:rgba(255,255,255,0.8);
+}
+#main .join_detail input{
+  margin-top:10px;
+}
+#main .join_detail form fieldset > div{
+  margin-top:20px;
+}
+#main .join_detail form fieldset > div:nth-of-type(1){
+  margin-top:0;
+}
+.join_detail input[type="email"] ,.join_detail  input[type="password"],.join_detail  input[type="text"],.join_detail  input[type="call"]{
+  background:#1B1C2F;
+}
+.phone{
+  margin-bottom:50px;
+}
+
+@media(max-width:500px){
+  #main .join_detail h3{
+    font-size:1.6rem;
+  }
+  #main .join_detail .check_email,.check_phone{
+  top:40px;
+  }
+  .phone .check_inzung{
+    top:100px;
+  }
+}
+
+/* done */
+#main .done{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  width:auto;
+  height:calc(100vh - 100px);
+  background: none;
+}
+.done h2{
+  margin-top:40px;
+}
+.done p{
+  margin-top:-20px;
+  margin-bottom:40px;
+  text-align:center;
+  color:rgba(255,255,255,0.8);
+}
+.done a{
+  display:block;
+  width:215px;
+  height:45px;
+  background: #157FD1;
+  border-radius:5px;
+  text-align:center;
+  line-height:45px;
+}
+@media(max-width:550px){
+  #main .done h2{
+    font-size:2rem;
+  }
+  #main .done p{
+    font-size:1.4rem;
+    margin-bottom:30px;
+  }
+  .done a{
+    width:160px;
+    height:35px;
+    font-size:1.4rem;
+    line-height:35px;
+  }
+}
+@media(max-width:390px){
+  .done br{
+    display:none;
+  }
+}

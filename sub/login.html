@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플루토</title>
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../css/sub.css">
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <h1><a href="../index.html"><img src="../img/logo.svg" alt="플루토">
+        </a></h1>
+      <ul class="util">
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="terms_of_service.html">회원가입</a></li>
+      </ul>
+    </header>
+    <main id="main">
+      <div class="login">
+        <form>
+          <fieldset>
+            <h2>로그인</h2>
+            <div class="m-pw">
+              <input type="email" placeholder="아이디" required>
+              <input type="password" placeholder="비밀번호" required>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="save_id"> <label for="save_id">아이디 저장</label>
+              <input type="checkbox" id="stay_login"> <label for="stay_login">로그인 상태 유지</label>
+              <a href="#"><span>비밀번호 찾기→</span></a>
+            </div>
+            <button type="submit">로그인</button>
+          </fieldset>
+          <div class="login_join">
+            <p>플루토가 처음이신가요?</p> <a href="terms_of_service.html">회원가입</a>
+          </div>
+        </form>
+      </div>
+
+    </main>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/sub.js"></script>
+
+</body>
+
+</html>

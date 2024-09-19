@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플루토</title>
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../css/sub.css">
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <h1><a href="../index.html"><img src="../img/logo.svg" alt="플루토">
+        </a></h1>
+      <ul class="util">
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="terms_of_service.html">회원가입</a></li>
+      </ul>
+    </header>
+    <main id="main">
+      <div class="join_detail">
+        <form>
+          <fieldset>
+            <h2>회원가입</h2>
+            <h3>아이디</h3>
+            <div class="name">
+              <input type="text" placeholder="아이디를 입력해주세요." id="id"><label for="id">@pluto.co.kr
+            </div>
+            <div class="password">
+              <h3>비밀번호</h3>
+              <span>비밀번호는 8~20자 영문, 숫자, 특수문자로 입력하세요.</span>
+              <input type="text" placeholder="비밀번호를 입력해주세요." minlength="8" maxlength="20">
+              <input type="text" placeholder="비밀번호를 확인해주세요." minlength="8" maxlength="20">
+            </div>
+            <div class="e-mail">
+              <h3>이메일</h3>
+              <input type="email" placeholder="이메일을 입력해주세요.">
+              <p class="check_email">이메일 인증</p>
+            </div>
+            <div class="phone">
+              <h3>휴대폰 번호</h3>
+              <input type="call" placeholder="휴대폰번호를 입력해주세요.">
+            </div>
+
+            <a href="done.html" class="btn">가입하기</a>
+          </fieldset>
+        </form>
+      </div>
+
+    </main>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/sub.js"></script>
+
+</body>
+
+</html>
